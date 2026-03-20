@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream:   #FAECC6;
+  --color-brown:   #4C211B;
+  --color-red:     #C12A15;
+  --color-sage:    #B9DD9C;
+  --color-blue:    #B9D1D5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #FAECC6;
+  color: #4C211B;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #C12A15;
+  color: #FAECC6;
+}
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }

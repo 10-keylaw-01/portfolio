@@ -1,0 +1,66 @@
+Portfolio/
+├── public/                         # Static assets served as-is
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx              # Top nav — logo, links, online status dot
+│   │   ├── Hero.jsx                # Hero grid — image slider, profile card, bio, socials, latest work
+│   │   ├── CampaignSection.jsx     # Phone mockup + 3 performance stats
+│   │   ├── ClientCasebook.jsx      # Table-style case study rows (3 clients)
+│   │   ├── ProcessSection.jsx      # Layered schematic visual + 4-step workflow
+│   │   ├── ServicesSection.jsx     # Trusted brands, booking CTA card, 4 service cards
+│   │   └── ContactFooter.jsx       # Full-bleed footer — bg image, phone, email, wordmark
+│   │
+│   ├── assets/                     # Local images / SVGs (if any)
+│   ├── App.jsx                     # Root — imports all sections in order
+│   ├── index.css                   # ★ Tailwind entry — @import "tailwindcss" + body defaults
+│   └── main.jsx                    # React entry point
+│
+├── index.html                      # Vite HTML shell
+├── vite.config.js                  # Vite + @tailwindcss/vite plugin
+├── package.json
+├── eslint.config.js
+├── folder-structure.txt            # ← you are here
+└── README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STYLING APPROACH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  All styling uses Tailwind v4 utility classes directly in JSX.
+  No CSS modules. No separate style files per component.
+
+  index.css contains only:
+    @import "tailwindcss"   ← loads all utilities
+    body defaults           ← bg-[#020617], text-slate-50, antialiased
+    .no-scrollbar           ← hides scrollbar on story row
+
+  Tailwind v4 is configured via @tailwindcss/vite (zero config file needed).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COLOUR PALETTE QUICK REFERENCE  (Tailwind slate scale)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Page background      bg-[#020617]       slate-950
+  Card surface         bg-slate-900       #0f172a
+  Card glass           bg-gradient-to-br from-white/10 to-white/0
+
+  Text — headings      text-slate-50      #f8fafc
+  Text — sub-headings  text-slate-200     #e2e8f0
+  Text — body/nav      text-slate-300     #cbd5e1
+  Text — captions      text-slate-400     #94a3b8
+  Text — labels        text-slate-500     #64748b
+  Text — very subtle   text-slate-600     #475569
+
+  Accent cyan (CTA)    bg-cyan-500        #06b6d4
+  Accent lime (book)   bg-lime-400        #a3e635
+  Status green         bg-emerald-400     #34d399
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE SECTION ORDER  (App.jsx)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. Navbar
+  2. Hero
+  3. CampaignSection
+  4. ClientCasebook
+  5. ProcessSection
+  6. ServicesSection
+  7. ContactFooter
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
