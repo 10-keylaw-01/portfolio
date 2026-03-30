@@ -19,12 +19,21 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="px-5 py-2 bg-[#C12A15] text-[#FAECC6] rounded-full border-2 border-[#4C211B] shadow-[4px_4px_0px_#4C211B] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_#4C211B] transition-all text-sm font-medium uppercase tracking-widest"
-        >
-          Hire me
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="/documents/KLM.pdf"
+            download
+            className="px-5 py-2 bg-white text-[#4C211B] rounded-full border-2 border-[#4C211B] shadow-[4px_4px_0px_#4C211B] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_#4C211B] transition-all text-sm font-medium uppercase tracking-widest"
+          >
+            Resume ↓
+          </a>
+          <a
+            href="#contact"
+            className="px-5 py-2 bg-[#C12A15] text-[#FAECC6] rounded-full border-2 border-[#4C211B] shadow-[4px_4px_0px_#4C211B] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_#4C211B] transition-all text-sm font-medium uppercase tracking-widest"
+          >
+            Hire me
+          </a>
+        </div>
       </header>
     </div>
   )

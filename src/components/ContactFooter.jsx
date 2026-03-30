@@ -22,9 +22,16 @@ export default function ContactFooter() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base text-[#4C211B]/60">
           <span className="font-serif text-xl font-medium text-[#4C211B]">Lawrence Kevin</span>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-[#C12A15] transition-colors">Instagram</a>
             <a
-              href="https://www.linkedin.com/in/lawrencekevinmwangi"
+              href="https://www.instagram.com/_k3ylaw_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#C12A15] transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kevin-lawrence-8388592a7/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#C12A15] transition-colors"
@@ -32,7 +39,7 @@ export default function ContactFooter() {
               LinkedIn
             </a>
             <a
-              href="https://wa.me/254700000000"
+              href="https://wa.me/254721665112"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#C12A15] transition-colors"

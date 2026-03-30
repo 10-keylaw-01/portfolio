@@ -1,19 +1,17 @@
-# React + Vite
+# Lawrence Kevin Mutai — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I am a Third-Year BSc. Information Technology student at the University of Eldoret with a deep-seated passion for the digital world. My journey into tech is driven by curiosity and a commitment to continuous learning, whether I'm diving into low-level C/C++ programming or exploring the intricacies of Linux fundamentals and Cybersecurity.
 
-Currently, two official plugins are available:
+Beyond the classroom, I am an active member of the IEEE and Google Developer Groups (GDG) communities, where I stay on the pulse of emerging technologies. I thrive on solving complex problems and believe that great software is built at the intersection of technical precision and effective teamwork.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+When I'm not at my terminal, you'll likely find me on the football pitch playing for my team, or collaborating on new web development projects.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+React · Vite · Tailwind CSS · JavaScript · C/C++ · Linux
 
-Note: This will impact Vite dev & build performances.
+## Built With
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portfolio
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Deployed on [Vercel](https://vercel.com/)
