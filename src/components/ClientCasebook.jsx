@@ -1,68 +1,72 @@
 const PROJECTS = [
   {
-    url: 'https://ember-five-mu.vercel.app/',
-    logo: 'https://ember-five-mu.vercel.app/logoClean.png',
-    logoAlt: 'Ember logo',
-    title: 'Ember',
+    url: 'https://emberlimited.vercel.app/',
+    title: 'Ember Limited',
     meta: 'Premium Lifestyle E-commerce',
-    description: 'Full-stack e-commerce platform with product catalog, cart management, and secure checkout.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    description: 'A polished online storefront with a premium landing experience, product storytelling, and fast customer pathways.',
+    tech: ['React', 'Vercel', 'E-commerce', 'UI Design'],
     bg: 'bg-[#B9DD9C]',
-    logoBg: 'bg-white',
   },
   {
-    url: 'https://www.rafikitravels.com/',
-    logo: 'https://www.rafikitravels.com/favicon.ico',
-    logoAlt: 'Rafiki Travels logo',
-    title: 'Rafiki Travels',
-    meta: 'East Africa Safari & Tours Platform',
-    description: 'Travel booking platform featuring safari packages, itinerary customization, and real-time availability.',
-    tech: ['React', 'Firebase', 'Tailwind CSS', 'Google Maps API'],
+    url: 'https://www.avenza.co.ke/',
+    title: 'Avenza',
+    meta: 'Business Website & Digital Presence',
+    description: 'A responsive company website shaped around credibility, clear service discovery, and smooth mobile browsing.',
+    tech: ['React', 'Tailwind CSS', 'Vercel', 'Responsive Design'],
     bg: 'bg-[#B9D1D5]',
-    logoBg: 'bg-white',
   },
   {
-    url: 'https://keylaw-tek-wifi.vercel.app/',
-    logo: 'https://keylaw-tek-wifi.vercel.app/favicon.ico',
-    logoAlt: 'keylaw.tek logo',
-    title: 'keylaw.tek',
-    meta: 'Premium Wi-Fi On Demand',
-    description: 'IoT-enabled Wi-Fi service platform with subscription management and network analytics.',
-    tech: ['React', 'Express', 'PostgreSQL', 'Socket.io'],
+    url: 'https://tujitume.com/',
+    title: 'Tujitume',
+    meta: 'Community Platform',
+    description: 'A public-facing platform designed to make information accessible, structured, and easy to act on.',
+    tech: ['Web Design', 'Content Structure', 'Performance', 'SEO'],
     bg: 'bg-[#FAECC6]',
-    logoBg: 'bg-[#4C211B]',
   },
 ]
 
 export default function ClientCasebook() {
   return (
     <section id="work" className="border-b-2 border-[#4C211B] bg-[#FAECC6] py-24 px-6">
-      <div className="max-w-5xl mx-auto flex flex-col gap-12">
+      <div className="max-w-6xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col gap-3">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#4C211B]/50">Selected work</p>
           <h2 className="font-serif text-4xl md:text-5xl font-medium tracking-tight">A few of many projects.</h2>
+          <p className="text-lg text-[#4C211B]/70 max-w-2xl leading-relaxed">
+            A selection of client and personal projects I've designed, built, and shipped.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {PROJECTS.map(p => (
             <a
               key={p.title}
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${p.bg} rounded-3xl border-2 border-[#4C211B] shadow-[6px_6px_0px_#4C211B] overflow-hidden hover:-translate-y-1 transition-transform flex flex-col`}
+              className={`${p.bg} rounded-lg border-2 border-[#4C211B] shadow-[6px_6px_0px_#4C211B] overflow-hidden hover:-translate-y-1 transition-transform flex flex-col`}
             >
-              <div className={`${p.logoBg} aspect-[4/3] flex items-center justify-center border-b-2 border-[#4C211B]`}>
-                {p.logo
-                  ? <img src={p.logo} alt={p.logoAlt} className="w-28 h-28 object-contain" />
-                  : <span className="font-serif text-2xl font-medium text-[#FAECC6] tracking-tight">{p.title}</span>
-                }
+              <div className="relative bg-white border-b-2 border-[#4C211B] overflow-hidden" style={{height: '220px'}}>
+                <iframe
+                  src={p.url}
+                  title={`${p.title} preview`}
+                  scrolling="no"
+                  style={{
+                    width: '1280px',
+                    height: '800px',
+                    border: 'none',
+                    transform: 'scale(0.34)',
+                    transformOrigin: 'top left',
+                    pointerEvents: 'none',
+                  }}
+                />
               </div>
-              <div className="p-5 flex flex-col gap-3 flex-1">
+              <div className="p-6 flex flex-col gap-3 flex-1">
                 <div>
                   <h3 className="text-xl font-medium tracking-tight">{p.title}</h3>
                   <p className="text-base text-[#4C211B]/60">{p.meta}</p>
                 </div>
+                <p className="text-sm text-[#4C211B]/70 leading-relaxed">{p.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {p.tech.map(t => (
                     <span
@@ -79,9 +83,7 @@ export default function ClientCasebook() {
           ))}
         </div>
 
-        <div className="text-center pt-8 border-t-2 border-[#4C211B]">
-          <p className="text-base text-[#4C211B]/60">These are just some of the many projects I've built.</p>
-        </div>
+
       </div>
     </section>
   )

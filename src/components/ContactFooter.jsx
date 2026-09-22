@@ -2,12 +2,18 @@ export default function ContactFooter() {
   return (
     <>
       <section id="contact" className="bg-[#C12A15] text-[#FAECC6] border-b-2 border-[#4C211B] py-32 px-6 text-center relative overflow-hidden">
+        <img
+          src="/animations/sky.svg"
+          alt=""
+          aria-hidden="true"
+          className="absolute right-[-4rem] bottom-[-5rem] h-64 w-64 md:right-[-2rem] md:bottom-[-8rem] md:h-[28rem] md:w-[28rem] object-contain opacity-50 saturate-150 contrast-110 pointer-events-none select-none"
+        />
         <div className="max-w-2xl mx-auto flex flex-col items-center gap-8 relative z-10">
           <h2 className="font-serif text-5xl md:text-7xl font-medium tracking-tight leading-[1.1]">
             Let's build something great.
           </h2>
           <p className="text-xl text-[#FAECC6]/80 leading-relaxed">
-            Available for projects · 2025. Reach out and let's talk.
+            Available for projects · 2026. Reach out and let's talk.
           </p>
           <a
             href="mailto:lawrencekevinmwangi@gmail.com"
