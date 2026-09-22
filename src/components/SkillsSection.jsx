@@ -100,6 +100,8 @@ export default function SkillsSection() {
                     top-0
                     z-20
 
+                    -mt-[14px]
+
                     h-[180px]
                     w-auto
                     -translate-y-[58%]
@@ -107,6 +109,7 @@ export default function SkillsSection() {
                     md:right-6
                     md:h-[220px]
                     md:-translate-y-[58%]
+                    md:-mt-[14px]
 
                     object-contain
                     select-none
